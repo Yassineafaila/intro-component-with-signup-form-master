@@ -2,11 +2,11 @@
 let fname = document.querySelector("#fname");
 let lname = document.querySelector("#lname");
 let email = document.querySelector("#email");
-let passWord = document.querySelector("#password");
+let password = document.querySelector("#password");
 let form = document.querySelector("form");
 let warning=document.querySelectorAll(".warning")
 let isValid = true;
-form.addEventListener("click", function (event) {
+form.addEventListener("submit", function (event) {
     let validFname = false;
     let validLname = false;
     let validEmail = false;
@@ -22,7 +22,7 @@ form.addEventListener("click", function (event) {
     if (email.value.match(validRegex)) {
         validEmail = true;
     }
-    if (passWord.value.Length > 8 || passWord.value !== "" || passWord.value.Length <= 15) {
+    if (password.value.length > 8 && password.value.length <= 15) {
         validPassword=true
     }
     if (validFname !== true || validLname !== true || validPassword !== true || validEmail !== true) {
