@@ -29,7 +29,7 @@ form.addEventListener("submit", function (event) {
         fname.classList.add("warning");
         lname.classList.add("warning");
         email.classList.add("warning");
-        passWord.classList.add("warning");
+        password.classList.add("warning");
         warning.forEach((w) => {
             w.style.display = "block";
         })
@@ -38,7 +38,7 @@ form.addEventListener("submit", function (event) {
         fname.classList.remove("warning");
         lname.classList.remove("warning");
         email.classList.remove("warning");
-        passWord.classList.remove("warning");
+        password.classList.remove("warning");
         warning.forEach((w) => {
           w.style.display = "none";
         });
